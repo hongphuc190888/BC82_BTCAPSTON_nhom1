@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CAPSTONE</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./output.css" />
     <!-- GG Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -23,18 +23,26 @@
         <nav class="bg-transparent border-gray-200 dark:bg-gray-900">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="./../img/logo-dark.svg" class="h-8" alt="Flowbite Logo" />
+                    <img src="./../img/logo-dark.png" class="h-8" alt="Flowbite Logo" />
                     <span
                         class="self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-white"></span>
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <ul class="flex items-center">
+                        <li class="px-5">
+                            <a href=""><i class="fa-solid fa-magnifying-glass text-gray-400 text-lg"></i></a>
+                        </li>
+                        <li class="px-5">
+                            <a href=""><i class="fa-regular fa-moon text-gray-400 text-lg"></i></a>
+                        </li>
+                    </ul>
                     <button type="button"
-                        class="text-white hover:text-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign
-                        in
+                        class="text-gray-400 hover:text-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Sign in
                     </button>
                     <button type="button"
-                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign
-                        Up
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Sign Up
                     </button>
                     <button data-collapse-toggle="navbar-cta" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -69,12 +77,14 @@
                         </li>
 
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                            class="flex items-center justify-between w-full py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                            Pages
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg></button>
+                            </svg>
+                        </button>
                         <!-- Dropdown menu -->
                         <div id="dropdownNavbar"
                             class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
@@ -102,16 +112,39 @@
                         <li>
                             <a href="#"
                                 class="block py-2 px-3 md:p-0 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Support</a>
-
                         </li>
-
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="hero-banner-1"></section>
+    <section class="hero-banner-1 my-20">
+        <div class="container mx-auto">
+            <div class="banner-content mx-12  flex justify-between">
+                <div class="banner-left size-3/5 ">
+                    <p class="mb-5 text-2xl md:text-xl text-white">🔥 Solid - A Complete SaaS Starter Template for SaaS
+                    </p>
+                    <h1 class=" mb-5 text-white text-3xl font-extrabold md:text-6xl">Robust SaaS Boilerplate <br> and
+                        Starter
+                        forNext.js</h1>
+                    <p class="text-gray-400">Packed with all the key integrations you need for swift SaaS startup
+                        launch,
+                        <br>
+                        including -
+                        Authentication, Database,
+                        Sanity Blog, Essential UI Components,<br> Business Pages and More. Built-winth - Next.js, React
+                        18
+                        and TypeScript.
+                    </p>
+                    <button class="mt-10 text-white bg-blue-500 py-2 px-5 rounded-2xl">Get Started</button>
+                </div>
+                <div class="banner-right size-2.5/5">
+                    <img src="./../img/hero-dark.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="brand"></section>
 
