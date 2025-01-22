@@ -1549,6 +1549,11 @@ input:checked + .toggle-bg {
   background-color: rgb(17 24 39 / 0.5);
 }
 
+.bg-mauchudao {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 28 49 / var(--tw-bg-opacity, 1));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -1556,11 +1561,6 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-mauchudao {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 28 49 / var(--tw-bg-opacity, 1));
 }
 
 .p-1 {
@@ -1809,10 +1809,6 @@ input:checked + .toggle-bg {
 }
 
 body {
-  background-color: #181c31;
-}
-
-.color-1 {
   background-color: #181c31;
 }
 
