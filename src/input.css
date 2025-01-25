@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 * {
-  font-family: "Roboto", serif;
+ font-family: "Inter", serif;
 }
 
 body {
   background-color: #181c31;
+  color:#999AA1
 }
