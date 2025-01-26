@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     colors: {
       mauchudao: "#181C31",
+      trusted1: "#F8F9FF",
+      trusted2: "#DEE7FF",
     },
     extend: {},
   },
