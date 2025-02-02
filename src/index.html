@@ -5,8 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAPSTONE</title>
-    <link rel="stylesheet" href="./output.css" />
+
     <!-- GG Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +16,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>CAPSTONE</title>
+    <link rel="stylesheet" href="./output.css" />
 </head>
 
 <body>
@@ -415,9 +423,107 @@
         </div>
     </section>
 <!-- QUESTION -->
-    <section class="questions"></section>
+    <section class="questions pb-20 lg:pb-24 xl:pb-[7.5rem]">
+        <div class="questions-container relative max-w-1235 mx-auto px-4 md:px-8 xl:px-0">
+            <!-- bg-dots -->
+            <div class="questions-bg w-full h-full absolute -z-10 -bottom-16">
+                <img src="../img/questions/shape-dotted-light.svg" alt="dots background" class="w-full h-full bg-transparent absolute inset-0">
+            </div>
+            <!-- content -->
+            <div class="question-content flex flex-wrap gap-8 md:flex-nowrap md:items-center xl:gap-32">
+                <!-- content-left -->
+                <div class="questions-content-left md:w-2/5 lg:w-1/2">
+                    <span class="uppercase text-black font-medium">our faqs</span>
+                    <h2 class=" relative text-3xl xl:text-[44px] xl:leading-[58px] text-black font-bold mb-6 capitalize">frequently asked <span class="inline-block relative before:absolute before:left-0 before:bottom-2.5 before:-z-10 before:w-full before:h-3 before:bg-[#FFEAC2]">questions</span></h2>
+                    <a href="#" class="group mt-8 inline-flex items-center gap-2.5 text-black hover:text-[#006bff]">
+                        <span class="group-hover:pr-2 duration-300 capitalize">know more</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- content-right -->
+                <div class="questions-content-right md:w-3/5 lg:w-1/2">
+                    <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="dark:text-gray-400" class="rounded-lg bg-white shadow-[0px_12px_120px_rgba(45,74,179,0.06)] ">
+                    <!-- question 1 -->
+                      <h2 id="accordion-flush-heading-1" class="">
+                        <button type="button" class="flex items-center justify-between w-full font-medium cursor-pointer text-lg text-black px-6 py-5 lg:px-9 lg:py-8 rtl:text-right border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                          <span>Lorem ipsum dolor sit amet, consectetur.</span>
+                          <svg data-accordion-icon class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
+                          </svg>
+                          <!-- <svg data-accordion-icon class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14"/>
+                          </svg> -->
+                          
+                        </button>
+                      </h2>
+                      <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                        <div class="px-6 py-5 lg:px-9 lg:py-8 border-b border-gray-200 dark:border-gray-700">
+                          <p class="mb-2 text-gray-500 dark:text-gray-400">We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.</p>
+                        </div>
+                      </div>
+                    <!-- question 2 -->
+                      <h2 id="accordion-flush-heading-2">
+                        <button type="button" class="flex items-center justify-between w-full font-medium cursor-pointer text-lg text-black px-6 py-5 lg:px-9 lg:py-8 rtl:text-right border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                          <span>Lorem ipsum dolor sit amet, consectetur.</span>
+                          <svg data-accordion-icon class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
+                          </svg>
+                        </button>
+                      </h2>
+                      <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                        <div class="px-6 py-5 lg:px-9 lg:py-8 border-b border-gray-200 dark:border-gray-700">
+                          <p class="mb-2 text-gray-500 dark:text-gray-400">We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.</p>
+                        </div>
+                      </div>
+                    <!-- question 3 -->
+                      <h2 id="accordion-flush-heading-3">
+                        <button type="button" class="flex items-center justify-between w-full font-medium cursor-pointer text-lg text-black px-6 py-5 lg:px-9 lg:py-8 rtl:text-right  dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                          <span>Lorem ipsum dolor sit amet, consectetur.</span>
+                          <svg data-accordion-icon class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
+                          </svg>                          
+                        </button>
+                      </h2>
+                      <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                        <div class="px-6 py-5 lg:px-9 lg:py-8 border-t border-gray-200 dark:border-gray-700">
+                          <p class="mb-2 text-gray-500 dark:text-gray-400">We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
 <!-- TESTIMONIALS -->
-    <section class="testimonials"></section>
+    <section class="testimonials">
+        <!-- testimonials-title -->
+         <div class="testimonials-title-container max-w-1315 mx-auto px-4 md:px-8 xl:px-0">
+            <div class="testimonials-title mx-auto text-center">
+                <div class="inline-block rounded-full bg-[#EDF5FF] px-5 py-2 mb-4">
+                    <span class="uppercase font-medium text-sm text-black">testimonials</span>
+                </div>
+                <h2 class="capitalize text-3xl font-bold text-black mx-auto mb-4 md:w-4/5 xl:w-1/2 xl:text-[44px] xl:leading-[55px]">client's testimonials</h2>
+                <p class="md:w-4/5 lg:w-3/5 xl:w-[46%] mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione inventore, molestias fugit obcaecati enim sit maxime dolorum, animi ex aliquid.</p>
+            </div>
+         </div>
+
+        <!-- testimonials-content -->
+         <div class="testiminals-content-container">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
 <!-- PLAN -->
     <section class="plan"></section>
 <!-- MESSAGE -->
@@ -427,7 +533,13 @@
 <!-- FOOTERS -->
     <footer></footer>
 
+    <!-- SCRIPTS -->
     <!-- flowbite -->
     <script src="./../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+    
 </body>
 </html>

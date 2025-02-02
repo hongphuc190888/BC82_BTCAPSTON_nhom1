@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
 
 * {
  font-family: "Inter", serif;
@@ -15,9 +17,14 @@ body {
   max-width: 1390px;
 }
 .max-w-1154{
-  max-width: 1154px
+  max-width: 1154px;
 }
-
+.max-w-1235{
+ max-width: 1235px;
+}
+.max-w-1315{
+  max-width: 1315px;
+}
 
 /* INTEGRATION */
 .integration-item{
@@ -27,8 +34,16 @@ body {
 .integration-item .integration-item-bg{
   @apply inline-block bg-white p-4 rounded-[10px] shadow-xl
 }
+
 .integration-item .integration-item-bg img{
   width: 50px;
   height: 50px;
 }
+
+/* TESTIMONIAL -SWIPER */
+/* .swiper {
+  width: 600px;
+  height: 300px;
+} */
+
 
