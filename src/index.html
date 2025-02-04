@@ -490,7 +490,7 @@
                         </div>
                       </div>
                     </div>
-                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -508,21 +508,80 @@
          </div>
 
         <!-- testimonials-content -->
-         <div class="testiminals-content-container">
+         <div class="testiminals-content-container max-w-1235 mx-auto mt-16 xl:mt-20 px-4 md:px-8 xl:px-0">
             <!-- Slider main container -->
-            <div class="swiper">
-              <!-- Additional required wrapper -->
+            <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden mx-auto relative overflow-hidden mb-20">
+              <!-- swiper-wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
+                 <!-- slide 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonials-item">
+                        <div class="testimonials-item-title">
+                            <div>
+                                <h3>David Smith</h3>
+                                <p>Founder @democompany</p>
+                            </div>
+                            <img src="../img/testimonials/user-01 (1).png" alt="David Smith">
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, deleniti repudiandae, reprehenderit, repellendus beatae cum vitae optio accusantium magni rem tempora corrupti dolores iure odio aliquid.    
+                        </p>
+                        <div class="testimonials-item-text"></div>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonials-item">
+                        <div class="testimonials-item-title">
+                            <div>
+                                <h3>Jhon Abraham</h3>
+                                <p>Founder @democompany</p>
+                            </div>
+                            <img src="../img/testimonials/user-02.png" alt="user-01">
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, deleniti repudiandae, reprehenderit, repellendus beatae cum vitae optio accusantium magni rem tempora corrupti dolores iure odio aliquid.    
+                        </p>
+                        <div class="testimonials-item-text"></div>
+                    </div>
+                </div>
+                <!-- slide 3 -->
+                <div class="swiper-slide">
+                    <div class="testimonials-item">
+                        <div class="testimonials-item-title">
+                            <div>
+                                <h3>David Smith</h3>
+                                <p>Founder @democompany</p>
+                            </div>
+                            <img src="../img/testimonials/user-01 (1).png" alt="user-01">
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, deleniti repudiandae, reprehenderit, repellendus beatae cum vitae optio accusantium magni rem tempora corrupti dolores iure odio aliquid.    
+                        </p>
+                        <div class="testimonials-item-text"></div>
+                    </div>
+                </div>
+                <!-- slide 4 -->
+                <div class="swiper-slide">
+                    <div class="testimonials-item">
+                        <div class="testimonials-item-title">
+                            <div>
+                                <h3>Jhon Abraham</h3>
+                                <p>Founder @democompany</p>
+                            </div>
+                            <img src="../img/testimonials/user-02.png" alt="user-01">
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, deleniti repudiandae, reprehenderit, repellendus beatae cum vitae optio accusantium magni rem tempora corrupti dolores iure odio aliquid.    
+                        </p>
+                        <div class="testimonials-item-text"></div>
+                    </div>
+                </div>
+                
               </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+              <!-- swiper - pagination-->
+              <div class="swiper-pagination">
+
+              </div>
             </div>
-        </div>
+            </div>
     </section>
 <!-- PLAN -->
     <section class="plan"></section>
@@ -539,7 +598,33 @@
 
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  
-    
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        breakpoints:{
+            768:{
+                slidesPerView:2,
+                spaceBetween:50,
+            }
+
+        },
+      
+        // Pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        // Auto play
+        autoplay: {
+          delay: 3000,
+        },
+      });
+    </script>
 </body>
 </html>
