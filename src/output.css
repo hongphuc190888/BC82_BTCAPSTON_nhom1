@@ -1095,6 +1095,10 @@ input:checked + .toggle-bg {
   inset: 0px;
 }
 
+.-left-20 {
+  left: -5rem;
+}
+
 .-top-20 {
   top: -5rem;
 }
@@ -1119,14 +1123,6 @@ input:checked + .toggle-bg {
   top: 0px;
 }
 
-.-left-52 {
-  left: -13rem;
-}
-
-.-left-20 {
-  left: -5rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -1145,6 +1141,10 @@ input:checked + .toggle-bg {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .mx-12 {
@@ -1210,6 +1210,10 @@ input:checked + .toggle-bg {
   margin-inline-end: 0.5rem;
 }
 
+.ml-28 {
+  margin-left: 7rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -1248,26 +1252,6 @@ input:checked + .toggle-bg {
 
 .mt-7 {
   margin-top: 1.75rem;
-}
-
-.ml-16 {
-  margin-left: 4rem;
-}
-
-.ml-36 {
-  margin-left: 9rem;
-}
-
-.ml-24 {
-  margin-left: 6rem;
-}
-
-.ml-32 {
-  margin-left: 8rem;
-}
-
-.ml-28 {
-  margin-left: 7rem;
 }
 
 .block {
@@ -2094,6 +2078,11 @@ body {
   left: 0px;
 }
 
+.before\:z-0::before {
+  content: var(--tw-content);
+  z-index: 0;
+}
+
 .before\:h-3::before {
   content: var(--tw-content);
   height: 0.75rem;
@@ -2394,12 +2383,12 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .md\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
@@ -2509,10 +2498,6 @@ body {
 
   .\32xl\:w-auto {
     width: auto;
-  }
-
-  .\32xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .\32xl\:flex-row {
