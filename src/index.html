@@ -19,12 +19,12 @@
 </head>
 
 <body>
-    <header class=" fixed top-0 left-0 border-b-2  z-999 text-gray-400 w-full">
+    <header class=" fixed top-0 left-0 border-b-2   z-20 text-gray-400 w-full">
         <nav class="bg-white h-20  border-gray-200   ">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-5    ">
                 <a href="https://flowbite.com/" class="flex items-center  space-x-3 rtl:space-x-reverse">
                     <!-- <img src="./../img/logo-dark.png" class="h-8" alt="Flowbite Logo" /> -->
-                    <img src="./img/logo-light.png" class="h-8" alt="Flowbite Logo" />
+                    <img src="./img/logo-light.png" class="ml-4 h-8" alt="Flowbite Logo" />
                     <span
                         class="self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-white"></span>
                 </a>
@@ -92,27 +92,35 @@
                         </li>
                         <!-- Dropdown menu -->
                         <div id="dropdownNavbar"
-                            class="z-10 hidden  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            class="z-10 hidden    font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                        class="block px-4 py-2  hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog-Grid</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                        class="block px-4 py-2  hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign-In</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                        class="block px-4 py-2  hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign-Up</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2  hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Docs</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Support</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2  hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">404</a>
                                 </li>
                             </ul>
-                            <div class="py-1">
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                                    out</a>
-                            </div>
+
                         </div>
                         <li>
                             <a href="#"
@@ -155,12 +163,12 @@
                     <p class="mb-5  lg:text-lg   text-black">🔥 Solid - A Complete SaaS Starter Template
                         for SaaS
                     </p>
-                    <h1 class=" mb-5 text-black text-3xl lg:text-4xl 2xl:text-6xl font-extrabold ">Robust SaaS
+                    <h1 class=" mb-5 text-black text-3xl lg:text-4xl 2xl:text-6xl font-extrabold  ">Robust SaaS
                         Boilerplate
                         <br> and
                         Starter
                         for <span
-                            class="relative  before:content-[''] before:absolute before:bottom-2.5 before:w-full before:h-3 before:left-0 before:bg-green-500/35  ">Next.js</span>
+                            class="relative before:z-0  before:content-[''] before:absolute before:bottom-2.5 before:w-full before:h-3 before:left-0 before:bg-green-500/35  ">Next.js</span>
                     </h1>
                     <p class="text-gray-400 text-lg ">Packed with all the key integrations you need for swift SaaS
                         startup launch,including - Authentication, Database, Sanity Blog, Essential UI
@@ -170,8 +178,12 @@
                         class="mt-10 transition-all duration-300 text-white bg-gray-700 hover:bg-gray-600  py-3 px-7 rounded-3xl">Get
                         Started</button>
                 </div>
-                <div class=" banner-right hidden sm:block  sm:w-1/2  ">
-                    <img class="" src="./img/hero-dark.png" alt="">
+                <div class="  banner-right relative hidden sm:block  sm:w-1/2  ">
+                    <img class="absolute  top-0 -left-10 " src="./img/shape-01 (1).png" alt="">
+                    <img class="absolute md:bottom-0 md:right-0 2xl:bottom-0 2xl:right-10" src="./img/shape-02.svg"
+                        alt="">
+                    <img class="absolute md:bottom-0 md:-right-5 bottom-0 right-0" src="./img/shape-03.svg" alt="">
+                    <img class=" " src="./img/hero-light.png" alt="">
                 </div>
             </div>
         </div>
@@ -232,21 +244,21 @@
                         FEATURES</p>
                     <h3 class="lg:text-5xl text-2xl font-bold mt-7">Core Features of Solid</h3>
                     <p class=" mt-4 text-gray-400 sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. In convallis tortor eros. <br> Donec vitae tortor lacus. Phasellus
+                        adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus
                         aliquam ante in maximus.</p>
                 </div>
                 <div class="banner-feature  grid sm:grid-cols-2 lg:grid-cols-3 gap-8  mt-16 ">
                     <div
-                        class=" hover:shadow-xl  item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        class=" hover:shadow-xl shadow   item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
                         <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-01.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
-                        <p class="text-gray-400 mt-5 sm:text-sm lg:text-xl ">Lorem ipsum dolor sit amet, <br>
+                        <p class="text-gray-400 mt-5 sm:text-sm lg:text-xl ">Lorem ipsum dolor sit amet,
                             consectetur
                             adipiscing elit. In
-                            convallis <br> tortor.</p>
+                            convallis tortor.</p>
                     </div>
                     <div
-                        class="hover:shadow-xl  item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        class="hover:shadow-xl shadow   item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
                         <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-02.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
                         <p class="text-gray-400 mt-5  sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet,
@@ -255,7 +267,7 @@
                             convallis tortor.</p>
                     </div>
                     <div
-                        class="hover:shadow-xl item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        class="hover:shadow-xl shadow item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
                         <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-03.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
                         <p class="text-gray-400 mt-5  sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet,
@@ -264,7 +276,7 @@
                             convallis tortor.</p>
                     </div>
                     <div
-                        class="hover:shadow-xl  item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        class="hover:shadow-xl shadow  item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
                         <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-04.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
                         <p class="text-gray-400 mt-5 sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet, consectetur
@@ -272,7 +284,7 @@
                             convallis tortor.</p>
                     </div>
                     <div
-                        class="hover:shadow-xl  item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        class="hover:shadow-xl shadow item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
                         <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-05.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
                         <p class="text-gray-400 mt-5  sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet,
@@ -281,7 +293,7 @@
                             convallis tortor.</p>
                     </div>
                     <div
-                        class="hover:shadow-xl  item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        class="hover:shadow-xl shadow item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
                         <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-06.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
                         <p class="text-gray-400 mt-5  sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet,
@@ -486,11 +498,11 @@
     <section class="trusted  ">
         <div class="container  mx-auto ">
             <div
-                class="trusted-content  relative py-24 border border-none rounded-lg mx-12  bg-gradient-to-t from-trusted1 to-trusted2 text-center">
-                <img class="absolute size-36 bottom-0 right-0" src="./img/decor.png" alt="">
-                <img class="absolute top-0  h-full  " src="./img/shape-dotted-light-02.png" alt="">
-                <img class="absolute size-96 -top-20 -left-20" src="./img/shape-04 (1).png" alt="">
-                <h1 class="text-5xl font-semibold py-4">Trusted by Global Companies.</h1>
+                class="trusted-content relative py-24 border border-none rounded-lg mx-12  bg-gradient-to-t from-trusted1 to-trusted2 text-center">
+                <img class="absolute  size-36 bottom-0 right-0" src="./img/decor.png" alt="">
+                <img class="absolute  top-0  h-full  " src="./img/shape-dotted-light-02.png" alt="">
+                <img class="absolute  size-96 -top-20 -left-20" src="./img/shape-04 (1).png" alt="">
+                <h1 class="text-5xl  font-semibold py-4">Trusted by Global Companies.</h1>
                 <p class="text-gray-400 py-4 md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     convallis
                     tortor
@@ -525,8 +537,6 @@
     <section class="blogs"></section>
 
     <footer></footer>
-
-
     <!-- flowbite -->
     <script src="./../node_modules/flowbite/dist/flowbite.min.js"></script>
     <!-- darkMode -->
