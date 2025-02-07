@@ -28,6 +28,9 @@ body {
 .max-w-1207{
   max-width: 1207px;
 }
+.max-w-1280{
+  max-width: 1280px;
+}
 
 /* INTEGRATION */
 .integration-item{
@@ -44,11 +47,6 @@ body {
 }
 
 /* TESTIMONIALS - SWIPER */
-/* .swiper {
-  width: 600px;
-  height: 300px;
-} */
-
 .testimonials-item{
   @apply bg-white p-9 pt-8 rounded-lg shadow-[0px_12px_120px_rgba(45,74,179,0.06)] 
 }
@@ -97,12 +95,12 @@ body {
   @apply text-black font-medium text-[22px] leading-9 mb-2.5 capitalize
 }
 
-.plan-item div {
+.plan-item .plan-item-benefits {
   @apply pt-9 pb-12 mt-9 border-t border-[#eeeeee]
 }
 
-.plan-item div li{
- @apply mb-4 text-black last:mb-0
+.plan-item .plan-item-benefits li{
+ @apply capitalize mb-4 text-black last:mb-0
 }
 
 .plan-item button {
@@ -112,3 +110,115 @@ body {
 .plan-item button span{
   @apply duration-300 group-hover:pr-2
 }
+
+.plan-item .popular {
+  @apply uppercase text-xs font-medium bg-[#076BFF] text-white px-4 py-2 rounded-bl-full rounded-tl-full absolute -right-3.5 top-[30px] -rotate-90
+}
+
+/* MESSAGE */
+.message-input{
+  @apply w-full border-0 border-b border-[#eeeeee] bg-transparent p-0 pb-3.5 focus:border-0 focus:border-b focus:border-[#757693] focus:placeholder:text-black focus:outline-0 lg:w-1/2 focus:ring-0
+}
+
+/* BLOGS */
+.blog-item{
+  @apply bg-white p-4 pb-9 rounded-lg  shadow-[0px_12px_120px_rgba(45,74,170,0.06)] 
+}
+.blog-item .blog-item-img{
+  @apply relative rounded-lg overflow-hidden block aspect-[369/239]
+}
+.blog-item .blog-item-img img{
+  @apply w-full h-full bg-transparent absolute inset-0 duration-300
+}
+
+.blog-item .blog-item-text{
+  @apply px-4
+}
+.blog-item .blog-item-text h3{
+  @apply text-lg font-medium text-black line-clamp-2 mt-8 mb-3.5 hover:text-[#076BFF] xl:text-2xl
+}
+.blog-item .blog-item-text p{
+  @apply line-clamp-3
+}
+
+
+/* FOOTER */
+.top-right-col h4{
+  @apply capitalize text-black font-medium text-2xl mb-9
+}
+.top-right-col li a{
+  @apply capitalize inline-block mb-3 hover:text-[#076BFF]
+} 
+
+.footer-bottom .bottom-left a{
+@apply hover:text-[#076BFF] capitalize
+}
+
+.bottom-right i{
+  @apply text-xl text-[#d1d8e0] transition-all duration-300 hover:text-[#006bff]
+}
+
+/* BACK TO TOP BUTTON */
+.btn-BackToTop {
+@apply inline-block fixed right-8 bottom-8 w-10 h-10 leading-[40px] text-center bg-[#006bff] text-white rounded-sm opacity-0 invisible hover:bg-opacity-80 transition-all duration-300 ease-in-out
+}
+
+.cd-top--is-visible { 
+/*   back-to-top button visible */
+  visibility: visible;
+  opacity: 1;
+}
+/* .cd-top--fade-out {  */
+  /* reduce button opacity if user keeps scrolling */
+  /* opacity: .5;
+} */
+
+/* ANIMATION */
+@keyframes slideTop{
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft{
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight{
+  from {
+    opacity:0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-top{
+  @apply animate-[slideTop_1.2s_ease-in-out]
+}
+
+.animate-left{
+  @apply animate-[slideLeft_1.4s_ease-in-out]
+}
+
+.animate-right{
+  @apply animate-[slideRight_1.4s_ease-in-out]
+}
+
