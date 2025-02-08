@@ -27,34 +27,37 @@
     <link rel="stylesheet" href="./output.css" />
 </head>
 
-<body class="scroll-smooth">
-    <header class="fixed top-0 left-0 w-full">
-        <nav class="bg-mauchudao h-20  border-gray-200 dark:bg-gray-900">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-5  ">
-                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="./../img/logo-dark.png" class="h-8" alt="Flowbite Logo" />
+<body>
+    <header class=" fixed top-0 left-0 border-b-2   z-20 text-gray-400 w-full">
+        <nav class="bg-white h-20  border-gray-200   ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-5    ">
+                <a href="https://flowbite.com/" class="flex items-center  space-x-3 rtl:space-x-reverse">
+                    <!-- <img src="./../img/logo-dark.png" class="h-8" alt="Flowbite Logo" /> -->
+                    <img src="./img/logo-light.png" class="ml-4 h-8" alt="Flowbite Logo" />
                     <span
                         class="self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-white"></span>
                 </a>
-                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <ul class="flex items-center">
-                        <li class="px-5">
-                            <a href=""><i class="fa-solid fa-magnifying-glass text-gray-400 text-lg"></i></a>
-                        </li>
-                        <li class="px-5">
-                            <a href=""><i class="fa-regular fa-moon text-gray-400 text-lg"></i></a>
-                        </li>
-                    </ul>
-                    <button type="button"
-                        class="text-gray-400 hover:text-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Sign in
-                    </button>
-                    <button type="button"
-                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Sign Up
-                    </button>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
+                    <div class="hidden 2xl:flex">
+                        <ul class="flex items-center">
+                            <li class="px-5">
+                                <a href=""><i class="fa-solid fa-magnifying-glass text-gray-400 text-lg"></i></a>
+                            </li>
+                            <li class="px-5">
+                                <a href=""><i class="fa-regular fa-moon text-gray-400 text-lg"></i></a>
+                            </li>
+                        </ul>
+                        <button type="button"
+                            class="text-gray-400 hover:text-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Sign in
+                        </button>
+                        <button type="button"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Sign Up
+                        </button>
+                    </div>
                     <button data-collapse-toggle="navbar-cta" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg 2xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         aria-controls="navbar-cta" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -64,63 +67,97 @@
                         </svg>
                     </button>
                 </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <div class="items-center justify-between hidden w-full 2xl:flex 2xl:w-auto 2xl:order-1" id="navbar-cta">
                     <ul
-                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        class="flex flex-col font-medium     p-4 2xl:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 2xl:space-x-8 rtl:space-x-reverse 2xl:flex-row 2xl:mt-0 2xl:border-0 2xl:bg-transparent dark:bg-gray-800 2xl:dark:bg-gray-900 dark:border-gray-700">
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                                class="inline-flex py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
                                 aria-current="page">Home</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Features</a>
+                                class="inline-flex py-2 px-3 md:p-0 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Features</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                                class="inline-flex py-2 px-3 md:p-0 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Docs</a>
+                                class="inline-flex py-2 px-3 md:p-0 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Docs</a>
                         </li>
 
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                            class="flex items-center justify-between w-full py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-                            Pages
-                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg>
-                        </button>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                                Pages
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                        </li>
                         <!-- Dropdown menu -->
                         <div id="dropdownNavbar"
-                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            class="z-10 hidden    font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                        class="block px-4 py-2  hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog-Grid</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                        class="block px-4 py-2  hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign-In</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                        class="block px-4 py-2  hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign-Up</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2  hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Docs</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Support</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2  hover:text-blue-500 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">404</a>
                                 </li>
                             </ul>
-                            <div class="py-1">
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                                    out</a>
-                            </div>
+
                         </div>
                         <li>
                             <a href="#"
                                 class="block py-2 px-3 md:p-0 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Support</a>
+                            <div class="2xl:hidden md:flex flex-row">
+                                <ul class="flex items-center">
+                                    <li class="px-5">
+                                        <a href=""><i
+                                                class="fa-solid fa-magnifying-glass text-gray-400 text-lg"></i></a>
+                                    </li>
+                                    <li class="px-5">
+                                        <a href=""><i class="fa-regular fa-moon text-gray-400 text-lg"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <button type="button"
+                                            class="text-gray-400 hover:text-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            Sign in
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-7 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            Sign Up
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -128,73 +165,78 @@
         </nav>
     </header>
 
-    <section class="hero-banner-1 mt-44  my-28">
-        <div class="container mx-auto">
-            <div class="banner-content mx-12  flex justify-between">
-                <div class="banner-left size-3/5 ">
-                    <p class="mb-5 text-2xl md:text-xl text-white">🔥 Solid - A Complete SaaS Starter Template for SaaS
+    <section class="hero-banner-1 mt-44   my-28">
+        <div class="container mx-auto  ">
+            <div class="banner-content flex  gap-10 items-center justify-between mx-5">
+                <div class="banner-left md:w-1/2 ">
+                    <p class="mb-5  lg:text-lg   text-black">🔥 Solid - A Complete SaaS Starter Template
+                        for SaaS
                     </p>
-                    <h1 class=" mb-5 text-white text-3xl font-extrabold md:text-6xl">Robust SaaS Boilerplate <br> and
+                    <h1 class=" mb-5 text-black text-3xl lg:text-4xl 2xl:text-6xl font-extrabold  ">Robust SaaS
+                        Boilerplate
+                        <br> and
                         Starter
-                        for Next.js</h1>
-                    <p class="text-gray-400">Packed with all the key integrations you need for swift SaaS startup
-                        launch,
-                        <br>
-                        including -
-                        Authentication, Database,
-                        Sanity Blog, Essential UI Components,<br> Business Pages and More. Built-winth - Next.js, React
-                        18
-                        and TypeScript.
+                        for <span
+                            class="relative before:z-0  before:content-[''] before:absolute before:bottom-2.5 before:w-full before:h-3 before:left-0 before:bg-green-500/35  ">Next.js</span>
+                    </h1>
+                    <p class="text-gray-400 text-lg ">Packed with all the key integrations you need for swift SaaS
+                        startup launch,including - Authentication, Database, Sanity Blog, Essential UI
+                        Components, Business Pages and More. Built-winth - Next.js, React 18 and TypeScript.
                     </p>
                     <button
                         class="mt-10 transition-all duration-300 text-white bg-gray-700 hover:bg-gray-600  py-3 px-7 rounded-3xl">Get
                         Started</button>
                 </div>
-                <div class="banner-right  size-2.5/5">
-                    <img src="./../img/hero-dark.png" alt="">
+                <div class="  banner-right relative hidden sm:block  sm:w-1/2  ">
+                    <img class="absolute  top-0 -left-10 " src="./img/shape-01 (1).png" alt="">
+                    <img class="absolute md:bottom-0 md:right-0 2xl:bottom-0 2xl:right-10" src="./img/shape-02.svg"
+                        alt="">
+                    <img class="absolute md:bottom-0 md:-right-5 bottom-0 right-0" src="./img/shape-03.svg" alt="">
+                    <img class=" " src="./img/hero-light.png" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="brand  border-b-2 border-white/30  border-t-2 ">
+    <section class="brand  border-b-2 border-gray  border-t-2 ">
         <div class="container mx-auto">
-            <div class="brand-item   py-12 mx-12 justify-center items-center  grid grid-cols-3 xl:grid-cols-6 gap-7  ">
+            <div
+                class="brand-item   py-12 mx-5 justify-center items-center lg: grid grid-cols-3 md:grid-cols-6 gap-7  ">
                 <a class="relative   h-10 w-[-98px] pt-3  opacity-1" href="">
                     <img class="  absolute transition-all duration-300 opacity-65  hover:opacity-100"
-                        src="./../img/brand-light-01.png" alt="">
+                        src="./img/brand-light-01.png" alt="">
                     <img class=" absolute  transition-all duration-300 hidden opacity-50 hover:opacity-100"
-                        src="./../img/brand-dark-01.png" alt="">
+                        src="./img/brand-dark-01.png" alt="">
                 </a>
                 <a class="relative h-10 pt-3  opacity-1" href="">
                     <img class=" absolute  transition-all duration-300 opacity-65  hover:opacity-100"
-                        src="./../img/brand-light-02.png" alt="">
+                        src="./img/brand-light-02.png" alt="">
                     <img class=" absolute  transition-all duration-300 hidden opacity-50 hover:opacity-200"
-                        src="./../img/brand-dark-02.png" alt="">
+                        src="./img/brand-dark-02.png" alt="">
                 </a>
                 <a class="relative h-10 pt-3   opacity-1" href="">
                     <img class=" absolute  transition-all duration-300 opacity-65  hover:opacity-100"
-                        src="./../img/brand-light-03.png" alt="">
+                        src="./img/brand-light-03.png" alt="">
                     <img class=" absolute  transition-all duration-300 hidden opacity-50 hover:opacity-200"
-                        src="./../img/brand-dark-03.png" alt="">
+                        src="./img/brand-dark-03.png" alt="">
                 </a>
                 <a class="relative h-10 pt-3  opacity-1" href="">
                     <img class=" absolute  transition-all duration-300 opacity-65  hover:opacity-100"
-                        src="./../img/brand-light-04.png" alt="">
+                        src="./img/brand-light-04.png" alt="">
                     <img class=" absolute  transition-all duration-300 hidden opacity-50 hover:opacity-200"
-                        src="./../img/brand-dark-04.png" alt="">
+                        src="./img/brand-dark-04.png" alt="">
                 </a>
                 <a class="relative h-10 pt-3  opacity-1" href="">
                     <img class=" absolute  transition-all duration-300 opacity-65  hover:opacity-100"
-                        src="./../img/brand-light-05.png" alt="">
+                        src="./img/brand-light-05.png" alt="">
                     <img class=" absolute  transition-all duration-300 hidden opacity-50 hover:opacity-200"
-                        src="./../img/brand-dark-05.png" alt="">
+                        src="../img/brand-dark-05.png" alt="">
                 </a>
                 <a class="relative h-10 pt-3  opacity-1" href="">
                     <img class=" absolute  transition-all duration-300 opacity-65  hover:opacity-100"
-                        src="./../img/brand-light-06.png" alt="">
+                        src="./img/brand-light-06.png" alt="">
                     <img class=" absolute  transition-all duration-300 hidden opacity-50 hover:opacity-200"
-                        src="./../img/brand-dark-06.png" alt="">
+                        src="./img/brand-dark-06.png" alt="">
                 </a>
             </div>
         </div>
@@ -203,119 +245,291 @@
 
     <section class="feature my-28">
         <div class="container mx-auto">
-            <div class="feature-content mx-12 text-white">
+            <div class="feature-content mx-12 text-black">
                 <div class="title-feature  flex flex-col justify-center items-center text-center ">
                     <p
-                        class="2xl:text-sm text-lg font-semibold w-fit px-6 py-2 border bg-white/5 rounded-2xl border-white/10 inline-flex ">
+                        class="text-lg 2xl:text-sm  font-semibold w-fit px-6 py-2 border bg-gray-200 rounded-3xl border-white/10 inline-flex ">
                         SOLID
                         FEATURES</p>
-                    <h3 class="2xl:text-5xl text-3xl font-bold mt-7">Core Features of Solid</h3>
-                    <p class=" mt-4 text-gray-400 text-xl">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. In convallis tortor eros. <br> Donec vitae tortor lacus. Phasellus
+                    <h3 class="lg:text-5xl text-2xl font-bold mt-7">Core Features of Solid</h3>
+                    <p class=" mt-4 text-gray-400 sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus
                         aliquam ante in maximus.</p>
                 </div>
-                <div class="banner-feature lg:grid grid-cols-3 gap-8  mt-16">
+                <div class="banner-feature  grid sm:grid-cols-2 lg:grid-cols-3 gap-8  mt-16 ">
                     <div
-                        class=" hover:bg-white/15 item-feature rounded-xl flex flex-col justify-center items-start text-white bg-white/5   p-10">
-                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./../img/icon-01.png" alt="">
+                        class=" hover:shadow-xl shadow   item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-01.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
-                        <p class="text-gray-400 mt-5 2xl:text-xl text-xl">Lorem ipsum dolor sit amet, <br> consectetur
+                        <p class="text-gray-400 mt-5 sm:text-sm lg:text-xl ">Lorem ipsum dolor sit amet,
+                            consectetur
                             adipiscing elit. In
-                            convallis <br> tortor.</p>
+                            convallis tortor.</p>
                     </div>
                     <div
-                        class="hover:bg-white/15  item-feature rounded-xl flex flex-col justify-center items-start text-white bg-white/5   p-10">
-                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./../img/icon-02.png" alt="">
+                        class="hover:shadow-xl shadow   item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-02.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
-                        <p class="text-gray-400 mt-5 2xl:text-xl text-xl">Lorem ipsum dolor sit amet, <br> consectetur
+                        <p class="text-gray-400 mt-5  sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet,
+                            consectetur
                             adipiscing elit. In
-                            convallis <br> tortor.</p>
+                            convallis tortor.</p>
                     </div>
                     <div
-                        class="hover:bg-white/15 item-feature rounded-xl flex flex-col justify-center items-start text-white bg-white/5   p-10">
-                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./../img/icon-03.png" alt="">
+                        class="hover:shadow-xl shadow item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-03.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
-                        <p class="text-gray-400 mt-5 2xl:text-xl text-xl">Lorem ipsum dolor sit amet, <br> consectetur
+                        <p class="text-gray-400 mt-5  sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet,
+                            consectetur
                             adipiscing elit. In
-                            convallis <br> tortor.</p>
+                            convallis tortor.</p>
                     </div>
                     <div
-                        class="hover:bg-white/15 item-feature rounded-xl flex flex-col justify-center items-start text-white bg-white/5   p-10">
-                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./../img/icon-04.png" alt="">
+                        class="hover:shadow-xl shadow  item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-04.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
-                        <p class="text-gray-400 mt-5 2xl:text-xl text-xl">Lorem ipsum dolor sit amet, <br> consectetur
+                        <p class="text-gray-400 mt-5 sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. In
-                            convallis <br> tortor.</p>
+                            convallis tortor.</p>
                     </div>
                     <div
-                        class="hover:bg-white/15 item-feature rounded-xl flex flex-col justify-center items-start text-white bg-white/5   p-10">
-                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./../img/icon-05.png" alt="">
+                        class="hover:shadow-xl shadow item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-05.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
-                        <p class="text-gray-400 mt-5 2xl:text-xl text-xl">Lorem ipsum dolor sit amet, <br> consectetur
+                        <p class="text-gray-400 mt-5  sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet,
+                            consectetur
                             adipiscing elit. In
-                            convallis <br> tortor.</p>
+                            convallis tortor.</p>
                     </div>
                     <div
-                        class="hover:bg-white/15 item-feature rounded-xl flex flex-col justify-center items-start text-white bg-white/5   p-10">
-                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./../img/icon-06.png" alt="">
+                        class="hover:shadow-xl shadow item-feature rounded-xl flex flex-col justify-center items-start text-black bg-white/5   p-10">
+                        <img class="border-none rounded-lg bg-blue-500 p-5" src="./img/icon-06.png" alt="">
                         <h3 class="2xl:text-3xl text-xl font-semibold mt-5">Crafted for SaaS</h3>
-                        <p class="text-gray-400 mt-5 2xl:text-xl text-xl">Lorem ipsum dolor sit amet, <br> consectetur
+                        <p class="text-gray-400 mt-5  sm:text-sm lg:text-xl">Lorem ipsum dolor sit amet,
+                            consectetur
                             adipiscing elit. In
-                            convallis <br> tortor.</p>
+                            convallis tortor.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="hero-banner-2 my-28">
+    <section class="hero-banner-2 my-28 ">
         <div class="container mx-auto">
-            <div class="banner-content-2 mx-12 grid grid-cols-2 gap-20">
-                <div class="banner-left-2 w-full">
-                    <img src="./../img/about-dark-01.png" alt="">
+
+            <div class="banner-content-2 mx-12 grid grid-cols-1 sm:grid-cols-2 gap-20 items-center">
+                <div class="banner-left-2 hidden sm:block  w-full">
+                    <img src="./img/about-dark-01.png" alt="">
                 </div>
-                <div class="banner-right-2 w-full text-white">
-                    <h4 class="font-semibold text-2xl mb-10"><span
-                            class="border-none px-3 py-1 rounded-full text-lg mr-7 font-normal bg-green-400">New</span>SAAS
+                <div class="banner-right-2 w-full text-black">
+                    <h4 class="font-semibold  text-lg uppercase md:text-2xl mb-10"><span
+                            class="border-none px-3 py-1 rounded-full text-sm text-white mr-2 font-normal bg-green-400">New</span>SAAS
                         Boilerplate for Next.js
                     </h4>
-                    <h3 class="text-6xl  font-semibold mb-5">A Complete Solution for <br> SaaS Startup</h3>
+                    <h3 class="text-3xl md:text-4xl 2xl:text-6xl  font-bold mb-5">A Complete Solution for SaaS Startup
+                    </h3>
                     <p class="text-gray-400 text-xl ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                         ultricies lacus
-                        <br> non fermentum
+                        non fermentum
                         ultrices. Fusce consectetur
                         le.
                     </p>
                     <div class=" flex items-center my-10">
                         <p
-                            class="border-none w-14 h-14 text-center bg-white/5 outline outline-white/10 flex justify-center items-center rounded-[50%] mr-5">
+                            class="border border-gray-200 px-4 py-4  text-center bg-white/5 outline outline-white/10 flex justify-center items-center rounded-full mr-5">
                             01
                         </p>
-                        <h4 class="text-2xl">Mailchimp for Newsletter Emails + SMTP <br> for Transactional Emails<span
-                                class="block text-gray-400 text-xl"> Ut
+                        <h4 class="text-lg  md:text-xl 2xl:text-2xl ">Mailchimp for Newsletter Emails + SMTP <br> for
+                            Transactional
+                            Emails<span class="block text-gray-400 text-sm md:text-xl"> Ut
                                 ultricies lacus non fermentum ultrices.</span></h4>
                     </div>
                     <div class=" flex items-center my-10">
                         <p
-                            class="border-none w-14 h-14 text-center bg-white/5 outline outline-white/10 flex justify-center items-center rounded-[50%] mr-5">
+                            class="border border-gray-200 px-4 py-4 text-center bg-white/5 outline outline-white/10 flex justify-center items-center rounded-full mr-5">
                             02
                         </p>
-                        <h4 class="text-2xl">Algolia Integration for Site Search<span
-                                class="block text-gray-400 text-xl">
+                        <h4 class="text-lg md:text-xl 2xl:text-2xl">Algolia Integration for Site Search<span
+                                class="block text-gray-400 text-sm md:text-xl">
                                 consectetur adipiscing
                                 elit fermentum ultricies.</span></h4>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="hero-banner-3"></section>
+    <section class="hero-banner-3 my-28">
+        <div class="container mx-auto">
+            <div class="banner-content-3 mx-12 grid grid-cols-1 md:grid-cols-2 gap-20 justify-center items-center ">
+                <div class="banner-left-2  w-full">
+                    <p class="text-base font-medium uppercase mb-4">Launch Your SaaS Fast</p>
+                    <h1 class="text-3xl lg:text-4xl 2xl:text-5xl font-bold  opacity-1">Packed with All Essential <br>
+                        <span
+                            class=" relative before:content-['']  before:absolute before:bottom-2.5 before:left-0 before:w-full  before:h-3 before:bg-orange-300/50 ">Integrations</span>
+                    </h1>
+                    <p class="text-lg text-gray-400 py-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                        ultricies lacus
+                        non fermentum
+                        ultrices. Fusce consectetur
+                        le.</p>
+                    <div class="flex items-center">
+                        <a class="hover:text-blue-300 text-xl" href=""><span class=" duration-300 pr-2 hover:pr-4">Know
+                                More</span><i class="fa-solid fa-arrow-right duration-300  hover:pl-2"></i></a>
 
-    <section class="about"></section>
+                    </div>
+                </div>
+                <div class="banner-left-3 hidden md:block w-full">
+                    <img src="./img/about-light-02.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="trusted"></section>
+    <section class="about my-28">
+        <div class="container mx-auto ">
+            <div class="mb-4 mx-12 py-5 border border-gray-200 dark:border-gray-700">
+                <ul class=" block  md:flex justify-center  -mb-px text-sm font-medium text-center" id="default-tab"
+                    data-tabs-toggle="#default-tab-content" role="tablist">
+                    <li class="me-2 px-0 2xl:px-20  " role="presentation">
+                        <button class="flex items-center  text-md border-b-2 p-4  rounded-t-lg" id="profile-tab"
+                            data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
+                            aria-selected="false"><span
+                                class="border border-gray-400/30 mr-2  px-3 py-3 rounded-full">01</span>Clean User
+                            Interface</button>
+                    </li>
+                    <li class="me-2 px-0 2xl:px-20" role="presentation">
+                        <button
+                            class="flex items-center p-4 border-b-2 rounded-t-lg text-md hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                            id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
+                            aria-controls="dashboard" aria-selected="false"><span
+                                class="border border-gray-400/30 mr-2  px-3 py-3 rounded-full">02</span>Essential
+                            Business
+                            Pages</button>
+                    </li>
+                    <li class="me-2 px-0 2xl:px-20" role="presentation">
+                        <button
+                            class="flex items-center p-4 border-b-2 text-md rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                            id="settings-tab" data-tabs-target="#settings" type="button" role="tab"
+                            aria-controls="settings" aria-selected="false"><span
+                                class="border border-gray-400/30 mr-2  px-3 py-3 rounded-full">03</span>Fully Functional
+                            Integrations</button>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="default-tab-content">
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="profile" role="tabpanel"
+                    aria-labelledby="profile-tab">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center">
+                        <div class="tab-left w-full">
+                            <h1 class="text-4xl font-bold my-5">Solid UI with Solid Features.</h1>
+                            <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                ultricies
+                                lacus non
+                                fermentum
+                                ultrices. Fusce consectetur
+                                le.
+                            </p>
+                            <p class="text-gray-400 my-4">Nam id eleifend dui, id iaculis purus. Etiam lobortis neque
+                                nec
+
+                                finibus
+                                sagittis. Nulla
+                                ligula nunc egestas ut.
+                            </p>
+                        </div>
+                        <div class="tab-right hidden md:block w-full ">
+                            <img src="./img/features-light-01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel"
+                    aria-labelledby="dashboard-tab">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center">
+                        <div class="tab-left w-full">
+                            <h1 class="text-4xl font-bold my-5">Pages and UI Components You Need for a SaaS.</h1>
+                            <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                ultricies
+
+                                lacus non
+                                fermentum
+                                ultrices. Fusce consectetur
+                                le.
+                            </p>
+                            <p class="text-gray-400 my-4">Nam id eleifend dui, id iaculis purus. Etiam lobortis neque
+                                nec
+
+                                finibus
+                                sagittis. Nulla
+                                ligula nunc egestas ut.
+                            </p>
+                        </div>
+                        <div class="tab-right hidden md:block w-full ">
+                            <img src="./img/features-light-01.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel"
+                    aria-labelledby="settings-tab">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center ">
+                        <div class="tab-left w-full">
+                            <h1 class="text-4xl font-bold my-5">Functional Blog, DB, Auth and Many More</h1>
+                            <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                ultricies
+
+                                lacus non
+                                fermentum
+                                ultrices. Fusce consectetur
+                                le.
+                            </p>
+                            <p class="text-gray-400 my-4">Nam id eleifend dui, id iaculis purus. Etiam lobortis neque
+                                nec
+
+                                finibus
+                                sagittis. Nulla
+                                ligula nunc egestas ut.
+                            </p>
+                        </div>
+                        <div class="tab-right hidden md:block w-full ">
+                            <img src="./img/features-light-01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="trusted  ">
+        <div class="container  mx-auto ">
+            <div
+                class="trusted-content relative py-24 border border-none rounded-lg mx-12  bg-gradient-to-t from-trusted1 to-trusted2 text-center">
+                <img class="absolute  size-36 bottom-0 right-0" src="./img/decor.png" alt="">
+                <img class="absolute  top-0  h-full  " src="./img/shape-dotted-light-02.png" alt="">
+                <img class="absolute  size-96 -top-20 -left-20" src="./img/shape-04 (1).png" alt="">
+                <h1 class="text-5xl  font-semibold py-4">Trusted by Global Companies.</h1>
+                <p class="text-gray-400 py-4 md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    convallis
+                    tortor
+                    eros. Donec vitae
+                    tortor lacus. Phasellus
+                    aliquam ante in maximus.</p>
+                <div class="number-trusted grid grid-cols-2 md:grid-cols-3 gap-5 justify-center  pt-11">
+                    <h3 class="flex flex-col text-4xl font-semibold">500K<span
+                            class="text-2xl font-normal text-gray-500">World Wide
+                            Clients</span></h3>
+                    <h3 class="flex flex-col text-4xl font-semibold">1M+<span
+                            class="text-2xl  font-normal text-gray-500">Downloads</span></h3>
+                    <h3 class="flex flex-col text-4xl ml-28 md:ml-0 font-semibold">865<span
+                            class="text-2xl  font-normal text-gray-500">Winning Award</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <!-- HAN -->
 <!-- INTERGRATION -->
