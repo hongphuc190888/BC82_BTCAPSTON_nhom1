@@ -1310,10 +1310,13 @@ input:checked + .toggle-bg {
   margin-top: 1.75rem;
 }
 
+<<<<<<< HEAD
 .mt-8 {
   margin-top: 2rem;
 }
 
+=======
+>>>>>>> master
 .block {
   display: block;
 }
