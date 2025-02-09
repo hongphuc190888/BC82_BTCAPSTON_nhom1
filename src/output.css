@@ -1214,6 +1214,10 @@ input:checked + .toggle-bg {
   margin-left: 7rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -1252,10 +1256,6 @@ input:checked + .toggle-bg {
 
 .mt-7 {
   margin-top: 1.75rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
 }
 
 .block {
